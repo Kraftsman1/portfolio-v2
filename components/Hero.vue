@@ -23,7 +23,7 @@
             </div>
         </div>
         <main class='w-full h-screen relative'>
-            <img src='/image/iamdeen.jpg' alt="farcry-6-hero" class='md:visible absolute object-cover w-full h-full transition delay-150 duration-300 ease-in-out' />
+            <img src='/image/iamdeen.jpg' alt="farcry-6-hero" class='md:visible absolute object-cover w-full h-full transition delay-150 duration-300 ease-in-out' loading="lazy" />
             <img src='/image/iamdeen2.png' alt="farcry-6-hero" class='invisible lg:visible absolute object-cover w-full h-full transition delay-150 duration-300 ease-in-out' />
             <div class="w-full h-full absolute z-[10] bg-black opacity-50"></div>
             <section class="absolute w-full h-full z-[20] text-gray-400">
