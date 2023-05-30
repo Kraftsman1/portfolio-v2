@@ -5,7 +5,7 @@ import { defineNuxtConfig } from "nuxt/config";
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Kraftman',
+      title: 'iamdeen',
       titleTemplate: 'Asigri Shamsu-Deen Al-Heyr | Portfolio',
       htmlAttrs: {
         lang: 'en'
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: [],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', 'nuxt-icon'],
   plugins: [],
   ssr: false,
 
