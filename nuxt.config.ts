@@ -27,10 +27,12 @@ export default defineNuxtConfig({
     "@nuxtjs/sanity",
   ],
   plugins: [],
-  ssr: false,
+  // ssr: false,
   sanity: {
     projectId: "s8lnkdtv",
     apiVersion: "2023-05-31",
+    dataset: "production",
+    useCdn: true,
   },
 
   devtools: {
