@@ -29,10 +29,10 @@ export default defineNuxtConfig({
   plugins: [],
   // ssr: false,
   sanity: {
-    projectId: "s8lnkdtv",
+    projectId: process.env.NUXT_ENV_SANITY_PROJECT_ID,
+    dataset: process.env.NUXT_ENV_SANITY_DATASET,
+    useCdn: true, // `false` if you want to ensure fresh data
     apiVersion: "2023-05-31",
-    dataset: "production",
-    useCdn: true,
   },
 
   devtools: {
