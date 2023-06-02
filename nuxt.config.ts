@@ -20,19 +20,15 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/i18n",
-    "nuxt-icon",
-    "@nuxtjs/sanity",
-  ],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxtjs/sanity"],
   plugins: [],
   // ssr: false,
   sanity: {
     projectId: process.env.NUXT_ENV_SANITY_PROJECT_ID,
     dataset: process.env.NUXT_ENV_SANITY_DATASET,
     useCdn: true, // `false` if you want to ensure fresh data
-    apiVersion: "2023-05-31",
+    // withCredentials: true,
+    apiVersion: "2021-10-21",
   },
 
   devtools: {
