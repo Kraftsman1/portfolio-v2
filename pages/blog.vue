@@ -1,10 +1,3 @@
-<script lang="ts">
-
-const query = groq`*[_type == "post"]`;
-const posts = useSanityQuery(query);
-console.log(posts)
-
-</script>
 <template>
     <div>
         <Header />
@@ -15,4 +8,12 @@ console.log(posts)
 
     </div>
 </template>
+
+<script setup>
+
+const query = groq`*[_type == "post"]`;
+const posts = useSanityQuery(query);
+console.log(posts)
+
+</script>
 
