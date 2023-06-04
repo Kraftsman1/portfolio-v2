@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', 'nuxt-icon'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon'],
   plugins: [],
   ssr: false,
 
