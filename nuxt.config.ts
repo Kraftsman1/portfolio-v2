@@ -22,13 +22,13 @@ export default defineNuxtConfig({
 
   modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxtjs/sanity"],
   plugins: [],
-  // ssr: false,
+  ssr: true,
+
   sanity: {
     projectId: process.env.NUXT_ENV_SANITY_PROJECT_ID,
     dataset: process.env.NUXT_ENV_SANITY_DATASET,
-    useCdn: true, // `false` if you want to ensure fresh data
-    // withCredentials: true,
-    apiVersion: "2021-10-21",
+    useCdn: false,
+    apiVersion: "2021-03-25",
   },
 
   devtools: {
