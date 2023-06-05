@@ -5,8 +5,7 @@ import { defineNuxtConfig } from "nuxt/config";
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "iamdeen",
-      titleTemplate: "Asigri Shamsu-Deen Al-Heyr | Portfolio",
+      titleTemplate: "Asigri Shamsu-Deen Al-Heyr | %s",
       htmlAttrs: {
         lang: "en",
       },
@@ -20,9 +19,9 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxtjs/sanity"],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxtjs/sanity", "nuxt-typed-router"],
   plugins: [],
-  ssr: true,
+  // ssr: false,
 
   sanity: {
     projectId: process.env.NUXT_ENV_SANITY_PROJECT_ID,

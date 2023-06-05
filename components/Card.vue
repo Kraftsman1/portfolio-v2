@@ -20,12 +20,12 @@ export default {
             <p class="mb-1 text-sm text-primary-500">{{ post.author.name }} • <time>{{ formatDate(post._createdAt) }}</time></p>
             <h3 class="text-xl font-medium text-gray-900">{{ post.title }}</h3>
             <p class="mt-1 text-gray-500">Sailboat UI helps streamline software projects, sprints, tasks, and bug tracking.</p>
-            <div class="mt-4 flex gap-2">
+            <div class="mt-4 flex gap-2 justify-between">
                 <span v-for="category in post.categories" :key="category._id"
-                    class="inline-flex items-center gap-1 rounded-full bg-orange-50 px-2 py-1 text-xs font-semibold text-orange-600">
+                    class="inline-flex items-center gap-1 rounded-full bg-yellow-50 px-2 py-1 text-xs font-semibold text-yellow-600">
                     {{ category.title }}
                 </span>
-                <a v-bind:href="`/blog/${post.slug.current}`">Read</a>
+                <NuxtLink :to="`/posts/${post.slug.current}`" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-3 py-2 text-center inline-flex items-center">Read More</NuxtLink>
             </div>
         </div>
     </div>

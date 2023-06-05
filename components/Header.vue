@@ -6,7 +6,7 @@
             <nav>
                 <ul class="md:flex items-center justify-between text-base uppercase text-white md:pt0">
                     <li v-for="page in navItems" :key="page.path" class="inline-block py-2 px-4">
-                        <nuxt-link :to="page.path">{{ page.name }}</nuxt-link>
+                        <NuxtLink :to="page.path">{{ page.name }}</NuxtLink>
                     </li>
                 </ul>
             </nav>

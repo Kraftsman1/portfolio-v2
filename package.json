@@ -19,6 +19,7 @@
     "nuxt-icon": "^0.4.1"
   },
   "dependencies": {
-    "@sanity/image-url": "^1.0.2"
+    "@sanity/image-url": "^1.0.2",
+    "nuxt-typed-router": "^3.2.2"
   }
 }

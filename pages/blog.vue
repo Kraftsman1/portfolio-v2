@@ -24,13 +24,10 @@ definePageMeta({
     <div>
         <Header />
 
-
-
-
         <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap m-4">
-                    <Card v-if="posts" v-for="post in posts" :key="post._id" :post="post" />
+                    <Card v-if="posts" v-for="post in posts" :key="post.slug.current" :post="post" />
                 </div>
             </div>
         </section>
