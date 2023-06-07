@@ -11,8 +11,19 @@
             <section class="absolute w-full h-full z-[20] text-white">
                 <section class="flex flex-col justify-center items-center w-full h-full">
                     <section class='text-left px-10'>
-                        <h1 class="text-bn text-3xl md:text-7xl uppercase tracking-widest">Asigri Shamsu-Deen Al-Heyr</h1>
-                        <h1 class="text-bn text-xl md:text-2xl tracking-widest">Fullstack + Support Engineer | ISO 27001
+                        <h1 v-motion="{
+                            initial: {
+                                y: 50,
+                                opacity: 0
+                            },
+                            enter: {
+                                y: 0,
+                                opacity: 1
+                            }
+                        }" class="text-bn text-3xl md:text-7xl uppercase tracking-widest">
+                            Asigri Shamsu-Deen Al-Heyr</h1>
+                        <h1 v-motion-slide-visible-top :delay="250" class="text-bn text-xl md:text-2xl tracking-widest">
+                            Fullstack + Support Engineer | ISO 27001
                             Lead Auditor</h1>
                     </section>
                     <!-- <section class='my-5'>

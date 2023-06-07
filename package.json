@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@sanity/image-url": "^1.0.2",
+    "@vueuse/motion": "^2.0.0",
     "nuxt-typed-router": "^3.2.2"
   }
 }

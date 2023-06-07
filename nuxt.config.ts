@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxtjs/sanity", "nuxt-typed-router"],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxtjs/sanity", "nuxt-typed-router", "@vueuse/motion/nuxt"],
   plugins: [],
   // ssr: false,
 
