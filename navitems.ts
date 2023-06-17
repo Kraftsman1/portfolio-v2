@@ -5,8 +5,8 @@ const navItems = [
         // icon: <HomeIcon />,
     },
     {
-        name: "Portfolio",
-        path: "/portfolio",
+        name: "Projects",
+        path: "/projects",
     },
     {
         name: "About",

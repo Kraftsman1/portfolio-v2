@@ -17,9 +17,13 @@ export default defineNuxtConfig({
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    }
   },
 
-  modules: ["nuxt-icon", "@nuxtjs/sanity", "nuxt-typed-router", "@vueuse/motion/nuxt", "@nuxthq/ui"],
+  modules: ["nuxt-icon", "@nuxtjs/sanity", "@vueuse/motion/nuxt", "@nuxthq/ui"],
   plugins: [],
   // ssr: false,
 
@@ -32,5 +36,9 @@ export default defineNuxtConfig({
 
   devtools: {
     enabled: true,
+  },
+
+  typescript: {
+    strict: true,
   },
 });

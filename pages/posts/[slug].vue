@@ -2,7 +2,7 @@
 import { type Post } from "~/types/Post";
 import BlockContent from "~/components/BlockContent.vue";
 
-const route = useRoute('posts-slug');
+const route = useRoute();
 
 const query = groq`*[ _type == "post" && slug.current == $slug]{
     title,
