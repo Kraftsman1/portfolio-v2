@@ -21,8 +21,8 @@
                                 y: 0,
                                 opacity: 1
                             }
-                        }" class="text-bn text-3xl md:text-7xl uppercase tracking-widest py-3">
-                            Asigri Shamsu-Deen Al-Heyr</h1>
+                        }" class="text-bn text-3xl md:text-7xl tracking-widest py-3">
+                            Hallo! I am <span class="uppercase">Deen.</span></h1>
                         <h2 v-motion-slide-visible-top :delay="250" class="text-bn text-xl md:text-2xl tracking-widest py-3">
                             Fullstack + Support Engineer | ISO 27001
                             Lead Auditor</h2>
